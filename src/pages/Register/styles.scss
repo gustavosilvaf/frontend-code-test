@@ -1,0 +1,144 @@
+@import '../../style-guide.scss';
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
+
+.Register {
+  height: 100%;
+  background-color: $secundary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+
+  &__form {
+    width: 40vw;
+    margin: 1em;
+    padding: 2em;
+    border-radius: $border-radius;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    & > input {
+      margin: 10px;
+    }
+
+  }
+
+  &__form-name {
+    height: 2em;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border-width: 0 0 2px;
+    border-color: $primary-color;
+
+    &:focus {
+      border-color: $tertiary-color
+    }
+
+    &::placeholder{
+      color: white;
+    }
+  }
+
+  &__form-age {
+    margin: 0;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border-width: 0 0 2px;
+    border-color: $primary-color;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: white;
+    }
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &:focus {
+      border-color: $tertiary-color
+    }
+
+  }
+
+  &__form-gender {
+    margin: 1em;
+    & div, label {
+      padding: 1em;
+      cursor: pointer;
+    }
+  }
+
+  &__form-map {
+    width: 100%;
+  }
+
+  &__map-title{
+    text-align: center;
+  }
+  &__map-subtitle {
+    text-align: center;
+  }
+
+  &__submit {
+    width: 30%;
+    height: 3em;
+    background-color: $tertiary-color;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  &__items-container{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-container {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__form-item {
+    margin: 0;
+    width: 3em;
+    height: 2em;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border-width: 0 0 2px;
+    border-color: $primary-color;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: white;
+    }
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &:focus {
+      border-color: $tertiary-color
+    }
+  }
+}

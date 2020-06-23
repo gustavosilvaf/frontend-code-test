@@ -1,0 +1,69 @@
+@import '../../style-guide.scss';
+
+.FlagInfected {
+  height: 100vh;
+  background-color: $secundary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  &__title{
+    color: white;
+  }
+
+  &__form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__report-container {
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__reporter, &__reported {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__report-title {
+    padding: 1em 0;
+  }
+
+  &__select {
+    margin-top: 1em;
+    height: 2em;
+    background-color: $tertiary-color;
+    border: none;
+    color: white;
+  }
+
+  &__submit {
+    margin-top: 1em;
+    width: 20%;
+    height: 3em;
+    background-color: $tertiary-color;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &__submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

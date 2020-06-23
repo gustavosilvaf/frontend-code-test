@@ -1,0 +1,95 @@
+@import '../../style-guide.scss';
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
+
+.UpdateLocation {
+  background-color: $secundary-color;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $primary-color;
+
+  &__container {
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__select {
+    margin-top: 1em;
+    height: 2em;
+    background-color: $tertiary-color;
+    border: none;
+    color: white;
+  }
+
+  &__option {
+    height: 10px;
+  }
+
+  &__uuid-title, &__update-instruction {
+    margin: 1em;
+  }
+
+  &__uuid{
+    color: $tertiary-color;
+    font-weight: bolder;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__submit {
+    margin-top: 1em;
+    width: 30%;
+    height: 3em;
+    background-color: $tertiary-color;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &__input {
+    margin: 0;
+    width: 50%;
+    height: 2em;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border-width: 0 0 2px;
+    border-color: $primary-color;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: white;
+    }
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &:focus {
+      border-color: $tertiary-color
+    }
+
+  }
+
+}

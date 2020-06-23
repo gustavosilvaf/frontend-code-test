@@ -1,0 +1,15 @@
+@import '../../style-guide.scss';
+
+.MainMenu {
+  margin: 2em 0;
+  &__item {
+    margin: 0 1rem;
+    color: white;
+    padding: 1em;
+    background-color: $tertiary-color;
+    
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}

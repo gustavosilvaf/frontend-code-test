@@ -1,0 +1,17 @@
+$main-font: 'Roboto', Helvetica, Arial, sanas-serif;
+
+$primary-color: #fff;
+$secundary-color: #1b1b1b;
+$tertiary-color: #810000;
+
+$border-radius: 12px;
+
+* {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all ease-in 0.2s;
+}

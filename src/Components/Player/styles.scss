@@ -1,0 +1,21 @@
+@import '../../style-guide.scss';
+
+.Player {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  margin: 1em;
+  font-size: 0.8em;
+
+  &__name {
+    font-style: italic;
+    font-size: 1.3em;
+  }
+
+  &__infected {
+    &--true {
+      font-weight: bolder;
+      color: #f00;
+      text-transform: uppercase;
+    }
+  }
+}

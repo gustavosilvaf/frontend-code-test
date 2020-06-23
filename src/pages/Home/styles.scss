@@ -1,0 +1,11 @@
+@import '../../style-guide.scss';
+
+.Home {
+  height: 100vh;
+  background-color: $secundary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  flex-direction: column;
+}
